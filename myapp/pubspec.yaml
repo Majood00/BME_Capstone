@@ -1,0 +1,45 @@
+  name: myapp
+  description: A new Flutter project.
+  publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+  version: 1.0.0+1
+
+  environment:
+    sdk: ">=2.12.0 <3.0.0"
+
+  dependencies:
+    flutter:
+      sdk: flutter
+      
+    cupertino_icons: ^1.0.2
+    auth_buttons: ^1.0.1+4
+    supabase_flutter:
+    supabase:
+    lottie:
+    material_design_icons_flutter:
+    youtube_player_iframe:
+    google_fonts:
+    url_launcher:
+    map:
+    latlng:
+    badges:
+    liquid_swipe:
+    camera:
+    paged_vertical_calendar:
+    tcard:
+    just_audio:
+    location:
+    concentric_transition:
+    bouncing_widget:
+    clipboard:
+    webviewx:
+    custom_refresh_indicator:
+    splash_screen_view:
+    
+
+  dev_dependencies:
+    flutter_test:
+      sdk: flutter
+
+  flutter:
+    uses-material-design: true
+  
