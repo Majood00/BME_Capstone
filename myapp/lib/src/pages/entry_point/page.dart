@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-
-import 'package:myapp/auth/auth_state.dart';
+import 'package:supabase/supabase.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
+import 'package:myapp/auth/auth_required_state.dart';
 
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:myapp/src/pages/index.dart';
@@ -19,7 +20,8 @@ class PageEntryPoint extends StatefulWidget {
   _State createState() => _State();
 }
 
-class _State extends State<PageEntryPoint> {
+class _State extends AuthRequiredState<PageEntryPoint>
+    with SingleTickerProviderStateMixin {
   final datasets = <String, dynamic>{};
 
   @override
