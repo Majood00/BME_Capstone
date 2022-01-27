@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:supabase/supabase.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
-import 'package:myapp/auth/auth_required_state.dart';
+import 'package:myapp/auth/auth_state.dart';
 
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:myapp/src/pages/index.dart';
@@ -11,8 +11,8 @@ import 'package:map/map.dart';
 import 'package:latlng/latlng.dart';
 import 'package:paged_vertical_calendar/paged_vertical_calendar.dart';
 
-class PageEntryPoint extends StatefulWidget {
-  const PageEntryPoint({
+class PageWalking extends StatefulWidget {
+  const PageWalking({
     Key? key,
   }) : super(key: key);
 
@@ -20,7 +20,7 @@ class PageEntryPoint extends StatefulWidget {
   _State createState() => _State();
 }
 
-class _State extends AuthRequiredState<PageEntryPoint>
+class _State extends AuthState<PageWalking>
     with SingleTickerProviderStateMixin {
   final datasets = <String, dynamic>{};
 
